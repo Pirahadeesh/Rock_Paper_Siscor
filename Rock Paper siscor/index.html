@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper siscor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- title -->
+
+    <div class="game-container">
+
+        <div class="innerbox">
+
+            <div id="titleDiv">
+
+            </div>
+            <h4>Choose your weapon:</h4>
+
+            <!-- scoreboard -->
+
+            <div class="scoreboard">
+                <p>Player: <span id="player-score">0</span>
+                </p>
+
+                <p>Computer: <span id="computer-score">0</span>
+                </p>
+
+            </div>
+
+            <!-- choose board -->
+
+            <div class="choose">
+                <p><span id="vs1"></span></p>
+                <p> <span id="vs2"></span></p>
+            </div>
+
+            <!-- Squares -->
+            <div style="display: flex;">
+                <!-- Rock Div -->
+
+                <div>
+                    <h4>Rock</h4>
+                    <button class="square-color" label="Rock" name="rock" id="rock"
+                        style="height: 100px; width: 100px; background-color: red; background-image: url('/rock.png');"
+                        value="rock" aria-placeholder="Rock">
+                    </button>
+                </div>
+
+                <!-- Paper Div -->
+                <div>
+                    <h4>Paper</h4>
+                    <button class="square-color" name="Paper" id="Paper"
+                        style="height: 100px; width: 100px; background-color: green; background-image: url('/paper.png');"
+                        value="Paper">
+                    </button>
+                </div>
+
+                <!-- Scissors Div -->
+                <div>
+                    <h4>Scissors</h4>
+                    <button class="square-color" name="scissors" id="scissors"
+                        style="height: 100px; width: 100px; background-color: rgb(4, 184, 255); background-image: url('/scissors.png');"
+                        value="scissors">
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="result">
+                <p>Result</p>
+                <!-- <p id="vs"></p> -->
+                <p id="result"></p>
+            </div>
+
+            <button id="clear-game">ClearScores</button>
+        </div>
+    </div>
+
+
+    <!-- Script js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
